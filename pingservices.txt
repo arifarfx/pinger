@@ -1,5 +1,5 @@
 http://rpc.pingomatic.com
-https://ping.blogs.yandex.ru/RPC2
+http://ping.blogs.yandex.ru/RPC2
 http://ping.blo.gs/
 http://blog.goo.ne.jp/XMLRPC
 http://blog.with2.net/ping.php
