@@ -1,0 +1,23 @@
+name: Ping URLs
+
+on:
+  workflow_dispatch: # Menjalankan workflow secara manual
+  # atau gunakan trigger lain, misalnya push
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install axios
+
+      - name: Run ping.js
+        run: node ping.js
